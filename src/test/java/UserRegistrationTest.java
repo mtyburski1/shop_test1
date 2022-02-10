@@ -11,7 +11,7 @@ import java.time.Duration;
 public class UserRegistrationTest extends TestBase{
 
     @Test
-    public void shouldOpen() {
+    public void shouldRegister() {
 
         MenuPage menuPage = new MenuPage(driver);
         menuPage.GoToRegister();
