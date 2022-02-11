@@ -25,9 +25,10 @@ public class MenuPage extends BasePage {
     public void goToSingIn(){
         goToSingIn.click();
     }
-    public void GoToRegister(){
+    public RegistrationPage GoToRegister(){
         goToSingIn.click();
         goToRegister.click();
+        return new RegistrationPage(driver);
     }
     public void GoToSingInAcc(){
         wait.until(ExpectedConditions.elementToBeClickable(goToSingIntAcc));
