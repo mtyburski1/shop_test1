@@ -92,9 +92,9 @@ public class RegistrationPage extends BasePage {
         psgdpr.click();
         return this;
     }
-    public RegistrationPage registerClick(){
+    public YourAccountPage registerClick(){
         registerClick.click();
-        return this;
+        return new YourAccountPage(driver);
 
     }
 }
