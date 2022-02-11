@@ -7,11 +7,9 @@ import models.propety_load.PropertyLoad;
 
 public class TestBase {
     protected WebDriver driver;
-    UserFactory userFactory;
 
     @BeforeMethod
     public void setUp() {
-        userFactory = new UserFactory();
 
         driver = new DriverFactory().getDriver(PropertyLoad.loadAPropetyFile("chromeDriver"));
 
